@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 data-testid="title">Dashboard</h1>
+      <div class="data" data-testid="slackUserName">
+        Slack Name: <span id="name"></span>
+      </div>
+      <div class="data img" data-testid="slackDisplayImage">
+        Slack Display Picture:
+        <img id="picture" src="" alt="Oguh Chukwuka Erasmus" />
+      </div>
+      <div class="data" data-testid="currentDayOfTheWeek">
+        Current Day of the Week: <span id="dayOfWeek"></span>
+      </div>
+      <div class="data" data-testid="currentUTCTime">
+        Current UTC Time: <span id="currentTime"></span>
+      </div>
+      <div class="data" data-testid="myTrack">
+        Track: <span id="track"></span>
+      </div>
+      <div class="data" data-testid="githubUrl">
+        GitHub URL: <a id="githubUrl" href="" target="_blank"></a>
+      </div>
+    </div>
+    <!-- scripts below -->
+    <script src="./index.js"></script>
+  </body>
+</html>
