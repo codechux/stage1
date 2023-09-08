@@ -15,6 +15,5 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("track").textContent = personalData.track;
   document.getElementById("dayOfWeek").textContent =
     new Date().toLocaleDateString("en-US", { weekday: "long" });
-  document.getElementById("currentTime").textContent =
-    new Date().toLocaleTimeString();
+  document.getElementById("currentTime").textContent = new Date().getTime();
 });
