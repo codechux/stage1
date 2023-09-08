@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     slackDisplayName: "Chux",
     slackDisplayPicture: "/images/IMG_4930.JPG",
     track: "Frontend",
-    githubUrl: "https://github.com/codechux",
+    githubUrl: "https://github.com/codechux/stage1",
     githubTextContent: "Click here",
   };
 
@@ -15,5 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("track").textContent = personalData.track;
   document.getElementById("dayOfWeek").textContent =
     new Date().toLocaleDateString("en-US", { weekday: "long" });
-  document.getElementById("currentTime").textContent = new Date().getTime();
+  document.getElementById("currentTime").textContent =
+    new Date().toLocaleTimeString();
 });

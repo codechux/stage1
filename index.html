@@ -9,23 +9,26 @@
   <body>
     <div class="container">
       <h1 data-testid="title">Dashboard</h1>
-      <div class="data img" data-testid="slackDisplayImage">
-        <img id="picture" src="" alt="Oguh Chukwuka Erasmus" />
+      <div class="data img">
+        <img id="picture" src="" alt="Chux" data-testid="slackDisplayImage" />
       </div>
       <div class="data" data-testid="slackUserName">
-        Slack Name: <span id="name"></span>
+        Slack Name: <span id="name" data-testid="slackUserName"></span>
       </div>
-      <div class="data" data-testid="currentDayOfTheWeek">
-        Current Day of the Week: <span id="dayOfWeek"></span>
+      <div class="data">
+        Current Day of the Week:
+        <span id="dayOfWeek" data-testid="currentDayOfTheWeek"></span>
       </div>
-      <div class="data" data-testid="currentUTCTime">
-        Current UTC Time: <span id="currentTime"></span>
+      <div class="data">
+        Current UTC Time:
+        <span id="currentTime" data-testid="currentUTCTime"></span>
       </div>
-      <div class="data" data-testid="myTrack">
-        Track: <span id="track"></span>
+      <div class="data">
+        Track: <span id="track" data-testid="myTrack"></span>
       </div>
       <div class="data" data-testid="githubUrl">
-        GitHub URL: <a id="githubUrl" href="" target="_blank"></a>
+        GitHub URL:
+        <a id="githubUrl" href="" target="_blank" data-testid="githubUrl"></a>
       </div>
     </div>
     <!-- scripts below -->
