@@ -8,26 +8,14 @@
   </head>
   <body>
     <div class="container">
-      <h1 data-testid="title">Dashboard</h1>
       <div class="data img">
         <img id="picture" src="" alt="Chux" data-testid="slackDisplayImage" />
       </div>
-      <div class="data" data-testid="slackUserName">
-        Slack Name: <span id="name" data-testid="slackUserName"></span>
-      </div>
+      <div class="data" data-testid="slackUserName" id="name"></div>
+      <div class="data" id="dayOfWeek" data-testid="currentDayOfTheWeek"></div>
+      <div class="data" id="currentTime" data-testid="currentUTCTime"></div>
+      <div class="data" id="track" data-testid="myTrack"></div>
       <div class="data">
-        Current Day of the Week:
-        <span id="dayOfWeek" data-testid="currentDayOfTheWeek"></span>
-      </div>
-      <div class="data">
-        Current UTC Time:
-        <span id="currentTime" data-testid="currentUTCTime"></span>
-      </div>
-      <div class="data">
-        Track: <span id="track" data-testid="myTrack"></span>
-      </div>
-      <div class="data" data-testid="githubUrl">
-        GitHub URL:
         <a id="githubUrl" href="" target="_blank" data-testid="githubUrl"></a>
       </div>
     </div>

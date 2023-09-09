@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     slackDisplayPicture: "/images/IMG_4930.JPG",
     track: "Frontend",
     githubUrl: "https://github.com/codechux/stage1",
-    githubTextContent: "Click here",
+    githubTextContent: "Github",
   };
 
   document.getElementById("name").textContent = personalData.slackDisplayName;
@@ -15,5 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("track").textContent = personalData.track;
   document.getElementById("dayOfWeek").textContent =
     new Date().toLocaleDateString("en-US", { weekday: "long" });
-  document.getElementById("currentTime").textContent = new Date().getTime();
 });
+
+const time = () =>
+  (document.getElementById("currentTime").textContent = new Date().getTime());
+
+time();
+setInterval(time, 1000);
